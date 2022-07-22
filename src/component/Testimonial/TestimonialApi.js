@@ -1,7 +1,7 @@
 const TestimonialApi = [
   {
     id: 1,
-    image: "./image/slide1.png",
+    image: "./Image/slide1.png",
     design: "NCD - DESIGN",
     name: "Mevine Thoda",
     offcer: "Marketing Officer",
@@ -11,7 +11,7 @@ const TestimonialApi = [
   },
   {
     id: 2,
-    image: "./image/slide2.png",
+    image: "./Image/slide2.png",
     design: "Default name",
     name: "Davei Luace",
     offcer: "Chief Operating Manager",
@@ -21,7 +21,7 @@ const TestimonialApi = [
   },
   {
     id: 3,
-    image: "./image/slide3.png",
+    image: "./Image/slide3.png",
     design: "Rainbow-Themes",
     name: "Nevine Acotanza",
     offcer: "Chief Operating Officer",
@@ -31,7 +31,7 @@ const TestimonialApi = [
   },
   {
     id: 4,
-    image: "./image/slide4.png",
+    image: "./Image/slide4.png",
     design: "Bound - Trolola",
     name: "Jone Duone Joe",
     offcer: "Operating Officer",
@@ -41,7 +41,7 @@ const TestimonialApi = [
   },
   {
     id: 5,
-    image: "./image/slide2.png",
+    image: "./Image/slide2.png",
     design: "Glassfisom",
     name: "Nevine Dhawan",
     offcer: "CEO Of Officer",
