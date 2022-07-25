@@ -129,6 +129,9 @@ body.active-modal {
   padding: 0 0;
   font-size: 20px;
 }
+.space{
+  padding: 15px 15px;
+}
 .modal-text button.close-modal i {
   margin: 0;
 }

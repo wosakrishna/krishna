@@ -39,12 +39,13 @@
 
 /*-----Testimonial slide-----------*/
 .Testimonial .slide {
-  max-width: 80%;
+  max-width: 90%;
   margin: auto;
   height: 500px;
   position: relative;
   display: flex;
   overflow: hidden;
+  background-color: rgba(0, 0, 0, 0);
 }
 article {
   position: absolute;

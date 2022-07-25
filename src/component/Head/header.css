@@ -23,11 +23,12 @@ header ul li a:hover {
 
 .home-btn {
   padding: 18px 25px;
-  border-radius: 6px;
+  border-radius: 10px;
   transition: 0.3s all ease;
   cursor: pointer;
   height: fit-content;
   color: #ff014f;
+  
 }
 .home-btn {
   background: linear-gradient(145deg, #e2e8ec, #ffffff);

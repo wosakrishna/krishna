@@ -16,6 +16,7 @@ const Portfolio = () => {
           <div className="container">
             <img src='Image/why.jpg' alt='' width="30px"  />
             </div>
+            <div className="space"></div>
           <div className='content grid container '>
             {Portfolio_data.map((value, index) => {
               return <Card key={index} image={value.image} category={value.category} totalLike={value.totalLike} title={value.title} />

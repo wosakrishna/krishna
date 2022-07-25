@@ -70,7 +70,7 @@ button {
   width: 50%;
 }
 .top {
-  margin-top: 80px;
+  margin-top: 40px;
 }
 .mtop {
   margin-top: 40px;
@@ -115,10 +115,11 @@ input {
 }
 /*----------Footer---------*/
 footer {
-  margin: 20% 0 10% 0;
+  margin: 1% 0 1% 0;
+  background-color: rgba(255, 0, 0, 0.13);
 }
 footer p {
-  margin-top: 30px;
+  margin-top: 10px;
 }
 /*----------Footer---------*/
 @media (max-width: 768px) {
