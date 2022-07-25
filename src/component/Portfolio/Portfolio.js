@@ -7,15 +7,16 @@ const Portfolio = () => {
   return (
     <>
       <section className='Portfolio top' id='portfolio'>
-        <div className='container'>
+          <div className="container">
           <div className='heading text-center '>
             <h4>VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK</h4>
             <h1>My Portfolio</h1>
           </div>
-            <div className='container'>
+          </div>
+          <div className="container">
             <img src='Image/why.jpg' alt='' width="30px"  />
             </div>
-          <div className='content grid container'>
+          <div className='content grid container '>
             {Portfolio_data.map((value, index) => {
               return <Card key={index} image={value.image} category={value.category} totalLike={value.totalLike} title={value.title} />
             })}
@@ -38,7 +39,7 @@ const Portfolio = () => {
               </div>
             </div>*/}
           </div>
-        </div>
+      
       </section>
     </>
   )

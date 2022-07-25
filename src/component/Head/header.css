@@ -17,6 +17,10 @@ header ul li a {
 header ul li a:hover {
   color: #ff014f;
 }
+.logo{
+  padding: 10px 10px;
+}
+
 .home-btn {
   padding: 18px 25px;
   border-radius: 6px;
