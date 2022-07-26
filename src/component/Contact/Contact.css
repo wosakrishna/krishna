@@ -1,6 +1,13 @@
 .Contact .left {
   width: 36%;
 }
+
+.contactImg {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+
 .Contact .right {
   width: 60%;
 }
@@ -40,7 +47,13 @@
 .Contact .right button i {
   margin-left: 10px;
 }
-@media (max-width: 768px) {
+
+
+/* @media (max-width: 768px) { */
+  @media (max-width: 991px) {
+  .Contact {
+    padding-bottom: 100px;
+  }
   .Contact .d_flex {
     flex-direction: column;
   }

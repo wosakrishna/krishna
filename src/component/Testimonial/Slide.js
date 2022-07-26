@@ -1,38 +1,52 @@
-import React from "react"
-import TestimonialApi from "./TestimonialApi"
+import React from "react";
+import TestimonialApi from "./TestimonialApi";
 
-const Slide = ({ id, image, design, name, offcer, post, date, desc, valueIndex, index }) => {
-  let position = "nextSlide"
+const Slide = ({
+  id,
+  image,
+  design,
+  name,
+  offcer,
+  post,
+  date,
+  desc,
+  valueIndex,
+  index,
+}) => {
+  let position = "nextSlide";
   if (valueIndex === index) {
-    position = "activeSlide"
+    position = "activeSlide";
   }
-  if (valueIndex === index - 1 || (index === 0 && valueIndex === TestimonialApi.length - 1)) {
-    position = "lastSlide"
+  if (
+    valueIndex === index - 1 ||
+    (index === 0 && valueIndex === TestimonialApi.length - 1)
+  ) {
+    position = "lastSlide";
   }
 
   return (
     <>
       <article className={`d_flex ${position}`} key={id}>
         {/*<div className='box d_flex' className={position} key={id}>*/}
-        <div className='left box_shodow'>
-          <div className='img'>
-            <img src={image} alt='' width="225px" height="243px" />
+        <div className="left box_shodow">
+          <div className="img">
+            <img src={image} alt="" className="testimonial-img" />
           </div>
-          <div className='details mtop'>
-            <span className='primary_color'>{design}</span>
+          <div className="details mtop">
+            <span className="primary_color">{design}</span>
             <h2>{name}</h2>
             <label>{offcer}</label>
           </div>
         </div>
 
-        <div className='right'>
-          <div className='icon'>
-            <div className='quote'>
-            <img src='./Image/F_logo/T.png' alt='' width="110px" />
+        <div className="right">
+          <div className="icon">
+            <div className="quote">
+              <img src="./Image/F_logo/T.png" alt="" width="110px" />
             </div>
           </div>
 
-          <div className='content box_shodow mtop'>
+          <div className="content box_shodow mtop">
             <h1>{post}</h1>
             <h3>{date}</h3>
             <p>{desc}</p>
@@ -54,7 +68,7 @@ const Slide = ({ id, image, design, name, offcer, post, date, desc, valueIndex, 
         <p>Marcent Of Vanice and treatment. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante. Ut tincidunt est ac dolor aliquam sodales phasellus smauris</p>
      */}
     </>
-  )
-}
+  );
+};
 
-export default Slide
+export default Slide;

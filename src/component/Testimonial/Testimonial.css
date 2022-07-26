@@ -9,7 +9,7 @@
 }
 .Testimonial .right {
   width: 65%;
-  padding: 0 0 0 50px;
+  padding: 0 0 0 50px; 
   margin: 0 20px 0 0;
 }
 .Testimonial .quote i {
@@ -37,11 +37,19 @@
   margin-right: 30px;
 }
 
+.testimonial-img {
+  width: 225px;
+  height: 243px;
+  object-fit: cover;
+}
+
 /*-----Testimonial slide-----------*/
 .Testimonial .slide {
   max-width: 90%;
   margin: auto;
-  height: 500px;
+
+  min-height: 500px;
+  max-height: max-content;
   position: relative;
   display: flex;
   overflow: hidden;
@@ -89,7 +97,7 @@ article.nextSlide {
     padding: 0 0 0 0px;
   }
   .Testimonial .slide {
-    height: 70vh;
+    height: 120vh;
     max-width: 90%;
   }
   .Testimonial .quote {

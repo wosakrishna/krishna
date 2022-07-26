@@ -1,10 +1,9 @@
 header {
-  height: 10vh;
-  line-height: 10vh;
+  padding: 10px 0;
+  box-shadow: rgba(50, 50, 93, 0.23) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
 }
-header .container {
-  padding-top: 15px;
-}
+
 header ul li {
   margin-left: 30px;
 }
@@ -17,8 +16,15 @@ header ul li a {
 header ul li a:hover {
   color: #ff014f;
 }
-.logo{
-  padding: 10px 10px;
+
+.navlink {
+  display: flex;
+  align-items: center;
+}
+
+.navlink ul{
+  display: flex;
+  align-items: center;
 }
 
 .home-btn {
@@ -53,7 +59,7 @@ header ul li a:hover {
 }
 @media (max-width: 768px) {
   header ul {
-    padding-top: 30px;
+    /* padding-top: 30px; */
   }
   .nav-links-mobile {
     position: absolute;
@@ -72,7 +78,7 @@ header ul li a:hover {
     width: 100%;
     transition: all 0.5s ease-in-out;
     text-transform: uppercase;
-    line-height: 70px;
+    /* line-height: 70px; */
   }
   header .link {
     display: none;
@@ -100,6 +106,6 @@ header ul li a:hover {
     line-height: 60px;
   }
   .header.active {
-    height: 10vh;
+    /* height: 10vh; */
   }
 }

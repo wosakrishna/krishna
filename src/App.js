@@ -1,4 +1,3 @@
-
 // import './App.css';
 // // import First from './1/First';
 
@@ -16,7 +15,7 @@
 
 // function App() {
 //   return (
- 
+
 //  <>
 //  <Router>
 //   <Check/>
@@ -24,7 +23,7 @@
 //   <Route exact path="/" element={<Home/>}/>
 //           <Route exact path="/about" element={<About/>}/>
 //           <Route exact path="/contact" element={<ContactUS/>}/>
-          
+
 //  </Routes>
 //  <Footer/>
 //  </Router>
@@ -35,18 +34,17 @@
 
 // export default App;
 
-
-import React from "react"
-import Header from "./component/Head/Header"
-import Features from "./component/Features/Features"
-import Home from "./component/Hero/Home"
-import Portfolio from "./component/Portfolio/Portfolio"
+import React from "react";
+import Header from "./component/Head/Header";
+import Features from "./component/Features/Features";
+import Home from "./component/Hero/Home";
+import Portfolio from "./component/Portfolio/Portfolio";
 // import Resume from "./component/Resume/Resume"
-import Testimonial from "./component/Testimonial/Testimonial"
+import Testimonial from "./component/Testimonial/Testimonial";
 // import Blog from "./component/Blog/Blog"
-import Contact from "./component/Contact/Contact"
-import Footer from "./component/Footer"
-import "./App.css"
+import Contact from "./component/Contact/Contact";
+import Footer from "./component/Footer";
+import "./App.css";
 
 const App = () => {
   return (
@@ -61,7 +59,7 @@ const App = () => {
       <Contact />
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;

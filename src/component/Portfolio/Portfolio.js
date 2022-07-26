@@ -1,28 +1,39 @@
-import React from "react"
-import "./Portfolio.css"
-import Card from "./Card"
-import Portfolio_data from "./Portfolio_data"
+import React from "react";
+import "./Portfolio.css";
+import Card from "./Card";
+import Portfolio_data from "./Portfolio_data";
 
 const Portfolio = () => {
   return (
     <>
-      <section className='Portfolio top' id='portfolio'>
-          <div className="container">
-          <div className='heading text-center '>
+      <section className="Portfolio" id="portfolio">
+        <div className="container">
+          <div className="heading text-center ">
             <h4>VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK</h4>
             <h1>My Portfolio</h1>
           </div>
-          </div>
-          <div className="container">
-            <img src='Image/why.jpg' alt='' width="30px"  />
-            </div>
-            <div className="space"></div>
-          <div className='content grid container '>
-            {Portfolio_data.map((value, index) => {
-              return <Card key={index} image={value.image} category={value.category} totalLike={value.totalLike} title={value.title} />
-            })}
+        </div>
 
-            {/*<div className='box btn_shadow '>
+        <div className="container">
+          <img src="Image/why.jpg" alt="" width="30px" />
+        </div>
+
+        <div className="space"></div>
+
+        <div className="content grid container">
+          {Portfolio_data.map((value, index) => {
+            return (
+              <Card
+                key={index}
+                image={value.image}
+                category={value.category}
+                totalLike={value.totalLike}
+                title={value.title}
+              />
+            );
+          })}
+
+          {/*<div className='box btn_shadow '>
               <div className='img'>
                   <img src='https://rainbowit.net/html/inbio/assets/images/portfolio/portfolio-01.jpg' alt='' />
               </div>
@@ -39,11 +50,10 @@ const Portfolio = () => {
                 </a>
               </div>
             </div>*/}
-          </div>
-      
+        </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default Portfolio
+export default Portfolio;
