@@ -18,7 +18,7 @@ const Portfolio_data = [
     category: "CHESS ENDGAME",
     totalLike: "750",
     title: "Mobile app landing design & maintain",
-    image: "./Image/portfolio02.jpg",
+    image: "./Image/portfolio03.jpg",
   },
   
 ]
