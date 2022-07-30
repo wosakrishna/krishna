@@ -51,10 +51,12 @@ const App = () => {
     <>
       <Header />
       <Home />
-      <Features />
       <Portfolio />
-      {/* <Resume /> */}
       <Testimonial />
+      <Features />
+      
+      {/* <Resume /> */}
+  
       {/* <Blog /> */}
       <Contact />
       <Footer />
