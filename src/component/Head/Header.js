@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import "./header.css"
 import logo from "../pic/logo.png"
+import contact1 from "../Contact/contact1.png";
 
 const Header = () => {
   // fixed Header
@@ -63,28 +64,52 @@ const Header = () => {
          <div onClick={toggleModal} className="overlay"></div>
          <div className="modal-content d_flex">
            <div className="modal-img left">
-             <img src="" alt="img" />
+           <div className="contactImg">
+                  <img src={contact1} alt="" className="contactImg" />
+                </div>
+           <div className="details">
+                  <h1>Krishna Chadha</h1>
+                  <p>Chess Trainer </p>
+                  <p>
+                    I am available for Chess Traning. Connect with me via and
+                    call in to my account.
+                  </p>{" "}
+                  <br />
+                  <p>Phone: +91-9988718973</p>
+                  <p>Email: Krishna.krish1391@gmail.com.com</p> <br />
+                  <span>FIND WITH ME</span>
+                  <div className="button f_flex">
+                    <button className="btn_shadow">
+                      <i className="fab fa-facebook-f"></i>
+                    </button>
+                    <button className="btn_shadow">
+                      <i className="fab fa-instagram"></i>
+                    </button>
+                    <button className="btn_shadow">
+                      <i className="fab fa-twitter"></i>
+                    </button>
+                  </div>
+                </div>
            </div>
            <div className="modal-text right">
-             <span>Featured - Design</span>
-             <h1>Contact</h1>
-             <p>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.
-               Cupiditate distinctio assumenda explicabo veniam temporibus
-               eligendi.
-             </p>
-             <p>
-               Consectetur adipisicing elit. Cupiditate distinctio assumenda.
-               dolorum alias suscipit rerum maiores aliquam earum odit, nihil
-               culpa quas iusto hic minus!
-             </p>
+             <span>For Demo Please fill the detail</span>
+             <h1>Demo </h1>
+          <div>
+            <span>Name </span><input type="text" />
+
+           <span>Contact Number</span> <input type="text" />
+
+           <span>E-mail </span> <input type="text" />
+           
+          </div>
              <div className="button f_flex mtop">
+              
                <button className="btn_shadow">
-                 LIKE THIS <i class="far fa-thumbs-up"></i>
-               </button>
-               <button className="btn_shadow">
+                  SEND MESSAGE <i className="fa fa-long-arrow-right"></i>
+                </button>
+               {/* <button className="btn_shadow">
                  VIEW PROJECT<i class="fas fa-chevron-right"></i>
-               </button>
+               </button> */}
              </div>
              <button className="close-modal btn_shadow" onClick={toggleModal}>
                <i class="fas fa-times"></i>

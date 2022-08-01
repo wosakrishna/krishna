@@ -5,6 +5,11 @@ header {
 header .container {
   padding-top: 0px;
 }
+.contactImg {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
 header ul li {
   margin-left: 30px;
 }
