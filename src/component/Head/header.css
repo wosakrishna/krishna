@@ -1,9 +1,18 @@
 header {
   height: 10vh;
-  line-height: 10vh;
+  line-height: 0vh;
 }
+.color{
+  color: #ff014f;
+ 
+}
+.navlink{
+  align-items: center;
+  justify-content: center;
+}
+
 header .container {
-  padding-top: 0px;
+  padding-top: 10px;
 }
 .contactImg {
   max-width: 100%;
@@ -21,6 +30,11 @@ header ul li a {
 }
 header ul li a:hover {
   color: #ff014f;
+}
+.size
+{
+  padding: 0px 0px;
+  
 }
 .home-btn {
   padding: 18px 25px;

@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import "./header.css"
-import logo from "../pic/logo.png"
+import logo from "../pic/logochess.png"
 import contact1 from "../Contact/contact1.png";
 
 const Header = () => {
@@ -27,12 +27,12 @@ const Header = () => {
     <>
       <header className='header'>
         <div className='container d_flex'>
-          <div className='logo'>
-            <img src={logo} alt='' />
+          <div className='size'>
+           <img src={logo} alt='' height="70px"/>
           </div>
 
           <div className='navlink'>
-            <ul className={Mobile ? "nav-links-mobile" : "link f_flex uppercase"} onClick={() => setMobile(false)}>
+            <ul className={Mobile ? "nav-links-mobile navlink" : "link f_flex uppercase navlink"}  onClick={() => setMobile(false)}>
               {/*<ul className='link f_flex uppercase {Mobile ? "nav-links-mobile" : "nav-links"} onClick={() => setMobile(false)}'>*/}
               <li>
                 <a href='#home'>home</a>
@@ -64,12 +64,13 @@ const Header = () => {
          <div onClick={toggleModal} className="overlay"></div>
          <div className="modal-content d_flex">
            <div className="modal-img left">
-           <div className="contactImg">
-                  <img src={contact1} alt="" className="contactImg" />
-                </div>
            <div className="details">
-                  <h1>Krishna Chadha</h1>
+                  <img src={contact1} alt="" className="contactImg" />
+            </div>
+           <div className="details ">
+                  <h1 className="color">Krishna Chadha</h1>
                   <p>Chess Trainer </p>
+                  <br />
                   <p>
                     I am available for Chess Traning. Connect with me via and
                     call in to my account.
@@ -92,14 +93,14 @@ const Header = () => {
                 </div>
            </div>
            <div className="modal-text right">
-             <span>For Demo Please fill the detail</span>
+             <span className="color">For Demo Please fill the detail</span>
              <h1>Demo </h1>
           <div>
-            <span>Name </span><input type="text" />
+            <span className="color">Name </span><input type="text" />
 
-           <span>Contact Number</span> <input type="text" />
+           <span className="color">Contact Number</span> <input type="text" />
 
-           <span>E-mail </span> <input type="text" />
+           <span className="color">E-mail </span> <input type="text" />
            
           </div>
              <div className="button f_flex mtop">
@@ -112,7 +113,7 @@ const Header = () => {
                </button> */}
              </div>
              <button className="close-modal btn_shadow" onClick={toggleModal}>
-               <i class="fas fa-times"></i>
+               <i className="fas fa-times"></i>
              </button>
            </div>
          </div>
